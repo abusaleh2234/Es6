@@ -22,10 +22,43 @@ place.style.textAlign = "center"
 
 const everyPlace = document.getElementsByClassName("everyPlace")
 
-// console.log(everyPlace);
+console.log(everyPlace);
 
 for (const place of everyPlace) {
     place.style.textAlign = "center";
     console.log(place.innerText);
     
 }
+
+
+const productList = document.querySelectorAll(".productList li")
+
+// console.log(productList);
+
+for (const product of productList) {
+    // console.log(product.innerText);
+    
+}
+
+
+const proPhone = document.querySelector(".productList li")
+// console.log(proPhone);
+
+
+
+// Attribute operation
+
+const Title = document.getElementById("gadgets")
+
+Title.classList.remove("chang")
+Title.classList.add("bg-center")
+Title.setAttribute("href", "abusaleh.com")
+console.log(Title.getAttribute("class"));
+console.log(Title.classList);
+
+const tour = document.getElementById("place")
+// tour.innerHTML = "<h2> how tour place</h2>"
+tour.innerText = "good tour place"
+
+
+// 5
