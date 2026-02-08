@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Load Data</title>
+
+    <style>
+
+        #postContainer{
+            max-width: 1200px ;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 20px;
+        }
+        .postCard{
+            border: 1px solid #ddd;
+            padding: 16px;
+            box-shadow: 5px 10px 8px #888888;
+            border-radius: 12px;
+        }
+        .postCard p{
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     <h1>Load Data</h1>
@@ -12,9 +33,9 @@
     <button onclick="postData()">Post Data</button>
 
     <div class="">
-        <ul id="postContainer">
+        <div id="postContainer">
 
-        </ul>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>

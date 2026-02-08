@@ -20,17 +20,20 @@ const displayPost = (data) => {
 
     const postUl = document.getElementById("postContainer")
     console.log(postUl);
-    
+    postUl.innerHTML =""
     // const everyData 
     data.forEach(res => {
-        // console.log(res);
+        console.log(res);
 
-        const li = document.createElement("li")
-        li.innerText = res.title
-
-        postUl.appendChild(li)
+        const div = document.createElement("div")
+        div.innerHTML = `<div class="postCard">
+                <h2>${res.title}</h2>
+                <p>${res.body}</p>
+            </div>`
+        postUl.appendChild(div)
     });
 }
+postData()
 // const displayPost = (data) => {
     // for (let i = 0; i < data.length; i++) {
     //     const element = data[i];
